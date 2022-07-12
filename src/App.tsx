@@ -1,3 +1,4 @@
+import Home from "Pages/Home";
 import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import AppLayout from "./AppLayout/AppContent";
@@ -7,15 +8,18 @@ const Spinner = () => <div className="w-full flex items-center justify-center">l
 
 function App() {
   return (
-    <AppLayout>
-      <Suspense fallback={<Spinner />}>
-        <Routes>
-          {Object.values(ROUTES).map((route, index) => {
-            return <Route {...route} element={<route.element />} key={index} />;
-          })}
-        </Routes>
-      </Suspense>
-    </AppLayout>
+    <div>
+      <Home />
+    </div>
+    // <AppLayout>
+    //   <Suspense fallback={<Spinner />}>
+    //     <Routes>
+    //       {Object.values(ROUTES).map((route, index) => {
+    //         return <Route {...route} element={<route.element />} key={index} />;
+    //       })}
+    //     </Routes>
+    //   </Suspense>
+    // </AppLayout>
   );
 }
 
