@@ -3,6 +3,7 @@ import React from "react";
 import { getAllProducts } from "Services/ProductService";
 import HomeNav from "Components/HomeNav";
 import HeaderSearch from "Components/HeaderSearch";
+import HeaderNav from "Components/HeaderNav";
 
 function Home() {
 	const { increment } = useCartContext();
@@ -10,9 +11,12 @@ function Home() {
 	const products = getAllProducts();
 
 	return (
-		<div className="px-[5rem]">
-			<HomeNav />
-			<HeaderSearch />
+		<div>
+			<div className="px-[5rem]">
+				<HomeNav />
+				<HeaderSearch />
+			</div>
+			<HeaderNav />
 		</div>
 		// {/* <h1>Products</h1>
 		// <div className="grid grid-cols-6 p-2">

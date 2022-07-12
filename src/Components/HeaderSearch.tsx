@@ -7,7 +7,7 @@ import { ReactComponent as CartIcon } from "../Assets/bag.svg";
 
 const HeaderSearch = () => {
 	return (
-		<div className="flex justify-between items-center">
+		<div className="flex justify-between items-center mb-5">
 			<LogoIcon className="w-[64px] h-[27px]" />
 			<form action="submit" className="flex">
 				<label htmlFor="search"></label>
@@ -24,10 +24,10 @@ const HeaderSearch = () => {
 				</button>
 			</form>
 			<div className="flex justify-between">
-				<WishIcon className="w-[24px] h-[24px]" />
-				<CompareIcon className="w-[24px] h-[24px]" />
-				<span className="flex">
-					<CartIcon className="w-[24px] h-[24px]" />
+				<WishIcon className="w-[24px] h-[24px] ml-3 px-[3px]" />
+				<CompareIcon className="w-[24px] h-[24px] ml-3 px-[3px]" />
+				<span className="flex text-xs items-center capitalize ml-3">
+					<CartIcon className="w-[24px] h-[24px] px-[3px]" />
 					bag(0)
 				</span>
 			</div>

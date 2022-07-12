@@ -5,7 +5,7 @@ import { ReactComponent as DropDown } from "../Assets/downarrow.svg";
 
 const HomeNav = () => {
 	return (
-		<div className="flex text-sm text-[gray] flex-cols justify-between mb-[2rem]">
+		<div className="flex text-sm text-[gray] flex-cols justify-between mb-[2rem] mt-[.5rem]">
 			<div className="flex">
 				<div className="flex justify-center items-center pr-5">
 					<PhoneIcon className="w-[20px] h-[20px]" />
