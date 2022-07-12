@@ -5,7 +5,7 @@ import { ReactComponent as DropDown } from "../Assets/downarrow.svg";
 
 const HomeNav = () => {
 	return (
-		<div className="flex text-sm text-[gray] flex-cols justify-between mb-[2rem] mt-[.5rem]">
+		<div className="flex text-[13px] text-[gray] flex-cols justify-between mb-[2rem] mt-[.5rem]">
 			<div className="flex">
 				<div className="flex justify-center items-center pr-5">
 					<PhoneIcon className="w-[20px] h-[20px]" />
@@ -18,10 +18,10 @@ const HomeNav = () => {
 			</div>
 			<div className="flex">
 				<span className="flex justify-between mr-4 border-r-[1px] border-[gray]">
-					<a href="#" className="px-4">
+					<a href="/" className="px-4">
 						Register or sign In
 					</a>
-					<a href="#" className="px-4">
+					<a href="/" className="px-4">
 						Client services
 					</a>
 				</span>

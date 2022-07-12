@@ -1,5 +1,6 @@
 import { useCartContext } from "Context/CartContext";
 import React from "react";
+import "./Home.css";
 import { getAllProducts } from "Services/ProductService";
 import HomeNav from "Components/HomeNav";
 import HeaderSearch from "Components/HeaderSearch";
